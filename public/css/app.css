@@ -1,0 +1,136 @@
+html,
+body {
+	width: 100vw;
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+
+	color: #2c1f19;
+	background: #eeedeb;
+}
+
+h1,
+h2,
+h3 {
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+}
+
+h1,
+h2 {
+	text-transform: uppercase;
+}
+
+h2 {
+	color: #e00748;
+}
+
+label {
+	font-size: 0.8em;
+	font-weight: bold;
+
+	display: block;
+
+	margin-bottom: 0.5rem;
+
+	text-transform: uppercase;
+}
+
+input,
+textarea {
+	display: block;
+
+	box-sizing: border-box;
+	width: 100%;
+	margin-bottom: 1rem;
+	padding: 0.5rem;
+
+	border: 1px solid transparent;
+}
+
+button {
+	font-weight: bold;
+
+	padding: 0.5rem;
+
+	text-transform: uppercase;
+
+	color: #eeedeb;
+	border: none;
+	background: #e00748;
+}
+
+.field input,
+.field textarea {
+	transition: border 0.3s;
+}
+
+.field input:focus,
+.field textarea:focus {
+	border: 1px solid #e00748;
+
+	caret-color: #e00748;
+}
+
+#app {
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 3rem 1rem;
+}
+
+#app h1 {
+	margin-top: 0;
+	margin-bottom: 0.5rem;
+}
+
+#app h2 {
+	margin-top: 0;
+	margin-bottom: 1.5rem;
+}
+
+#app textarea {
+	resize: vertical;
+}
+
+#app .key-field {
+	display: flex;
+
+	flex-flow: row nowrap;
+
+	margin-bottom: 1rem;
+
+	align-items: center;
+}
+
+#app .key-field input {
+	flex: 1 1 100%;
+
+	width: auto;
+	margin-bottom: 0;
+}
+
+#app .key-field button {
+	flex: 1 0 auto;
+
+	height: 100%;
+	margin-left: 1rem;
+}
+
+#app .output {
+	max-width: 75%;
+	margin: 2rem auto 0;
+	padding: 1rem;
+
+	transition: opacity 0.3s;
+
+	opacity: 0;
+	background: #e2e1de;
+}
+
+#app .output.active {
+	opacity: 1;
+}

@@ -1,0 +1,20 @@
+{
+	"name": "aes",
+	"version": "1.0.0",
+	"description": "A server side AES tool",
+	"main": "index.js",
+	"scripts": {
+		"start": "node index.js",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "Omar Adrian Salinas Villanueva",
+	"license": "MIT",
+	"dependencies": {
+		"body-parser": "^1.18.2",
+		"express": "^4.16.2"
+	},
+	"engines": {
+		"node": "8.6.x",
+		"npm": "5.3.x"
+	}
+}
